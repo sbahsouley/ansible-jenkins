@@ -1,0 +1,6 @@
+---
+# Variables par défaut pour le rôle nginx
+nginx_port: 80
+nginx_user: www-data
+nginx_worker_processes: auto
+nginx_document_root: /var/www/nginx

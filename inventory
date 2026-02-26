@@ -1,0 +1,6 @@
+[webservers]
+web1 ansible_host=10.0.200.217 ansible_user=ubuntu
+#web2 ansible_host=192.168.1.11 ansible_user=ubuntu
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
