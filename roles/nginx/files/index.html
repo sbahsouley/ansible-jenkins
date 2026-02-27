@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue sur Nginx - {{ mavariable }}</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #333;
+            margin: 0;
+            font-size: 2.5em;
+        }
+        p {
+            color: #666;
+            font-size: 1.1em;
+            margin: 20px 0;
+        }
+        .success {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        .info {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Bienvenue sur Nginx!</h1>
+        <p class="success">✓ Installation réussie avec Ansible</p>
+        <div class="info">
+            <p>Nginx est correctement installé et configuré via un rôle Ansible.</p>
+            <p><strong>Serveur:</strong> {{ ansible_hostname }}</p>
+            <p><strong>Port:</strong> 80</p>
+        </div>
+    </div>
+</body>
+</html>
